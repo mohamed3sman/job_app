@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SimilarJobWidget extends StatelessWidget {
   const SimilarJobWidget({super.key});
@@ -18,23 +19,23 @@ class SimilarJobWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Column(
+              Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     'Evernote',
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 14.sp,
                       color: Colors.grey,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Text(
                     'Product Designer',
                     style: TextStyle(
-                      fontSize: 22,
+                      fontSize: 19.sp,
                       fontWeight: FontWeight.w900,
                       fontFamily: 'Libre',
                       color: Colors.white,
@@ -47,10 +48,10 @@ class SimilarJobWidget extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: const Color(0xffd2f5b5),
                     borderRadius: BorderRadius.circular(50)),
-                child: const Icon(
+                child: Icon(
                   Icons.join_full_rounded,
                   color: Colors.black,
-                  size: 25,
+                  size: 23.r,
                 ),
               ),
             ],
@@ -65,11 +66,11 @@ class SimilarJobWidget extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.grey[900],
                       borderRadius: BorderRadius.circular(50)),
-                  child: const Text(
+                  child: Text(
                     'User Interface',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 10,
+                      fontSize: 9.sp,
                     ),
                   ),
                 ),
@@ -82,11 +83,11 @@ class SimilarJobWidget extends StatelessWidget {
                   decoration: BoxDecoration(
                       color: Colors.grey[900],
                       borderRadius: BorderRadius.circular(50)),
-                  child: const Text(
+                  child: Text(
                     'User Research / flow',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 10,
+                      fontSize: 9.sp,
                     ),
                   ),
                 ),
@@ -95,10 +96,10 @@ class SimilarJobWidget extends StatelessWidget {
           ),
           Row(
             children: [
-              const Icon(
+              Icon(
                 Icons.access_time_rounded,
                 color: Colors.white,
-                size: 20,
+                size: 22.r,
               ),
               const SizedBox(
                 width: 5,
@@ -106,6 +107,7 @@ class SimilarJobWidget extends StatelessWidget {
               Text(
                 'Be in the first 28 applicants',
                 style: TextStyle(
+                  fontSize: 13.sp,
                   color: Colors.white.withOpacity(0.7),
                 ),
               ),
@@ -123,14 +125,14 @@ class SimilarJobWidget extends StatelessWidget {
                     borderRadius: BorderRadius.circular(50),
                     child: Image.network(
                       'https://i.pinimg.com/originals/72/20/c4/7220c4ee3f3a756356c1ca7b1ab230df.jpg',
-                      width: 33,
+                      width: 30.r,
                     ),
                   ),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(50),
                     child: Image.network(
                       'https://th.bing.com/th/id/OIP.6XQo_VQmwSmtoF-X8YjCXQHaHa?pid=ImgDet&rs=1',
-                      width: 33,
+                      width: 30.r,
                     ),
                   ),
                   ClipRRect(
@@ -139,8 +141,9 @@ class SimilarJobWidget extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                           horizontal: 7, vertical: 7),
                       color: Colors.white,
-                      child: const Text(
+                      child: Text(
                         '+2',
+                        style: TextStyle(fontSize: 12.sp),
                       ),
                     ),
                   ),
@@ -149,6 +152,7 @@ class SimilarJobWidget extends StatelessWidget {
               Text(
                 '6 Hours Ago',
                 style: TextStyle(
+                  fontSize: 13.sp,
                   color: Colors.white.withOpacity(0.7),
                 ),
               ),

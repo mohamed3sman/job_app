@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomJobCategory extends StatelessWidget {
   const CustomJobCategory(
@@ -30,7 +31,7 @@ class CustomJobCategory extends StatelessWidget {
                 ),
                 child: Image.asset(
                   'assets/images/gem.png',
-                  width: 20,
+                  width: 18.r,
                 ),
               ),
             ),
@@ -40,7 +41,7 @@ class CustomJobCategory extends StatelessWidget {
             Text(
               text,
               style: TextStyle(
-                fontSize: 14,
+                fontSize: 12.sp,
                 color: Colors.black.withOpacity(0.7),
                 fontWeight: FontWeight.bold,
               ),
@@ -50,9 +51,9 @@ class CustomJobCategory extends StatelessWidget {
             ),
             Text(
               '${jobsNumber}k Jobs',
-              style: const TextStyle(
+              style: TextStyle(
                 color: Colors.black,
-                fontSize: 16,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w900,
                 fontFamily: 'Libre',
               ),
@@ -65,9 +66,9 @@ class CustomJobCategory extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15)),
                 padding:
                     const EdgeInsets.symmetric(horizontal: 15, vertical: 7),
-                child: const Text(
+                child: Text(
                   'View Jobs',
-                  style: TextStyle(color: Colors.white, fontSize: 10),
+                  style: TextStyle(color: Colors.white, fontSize: 9.sp),
                 ),
               ),
             ),

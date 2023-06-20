@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class JobSearchWidget extends StatelessWidget {
   const JobSearchWidget({super.key});
@@ -16,6 +17,7 @@ class JobSearchWidget extends StatelessWidget {
             children: [
               Icon(
                 Icons.search_rounded,
+                size: 23.r,
                 color: Colors.black.withOpacity(0.5),
               ),
               const SizedBox(
@@ -24,7 +26,7 @@ class JobSearchWidget extends StatelessWidget {
               Text(
                 'Search for jobs',
                 style: TextStyle(
-                    fontSize: 15, color: Colors.black.withOpacity(0.5)),
+                    fontSize: 14.sp, color: Colors.black.withOpacity(0.5)),
               ),
             ],
           ),
@@ -36,7 +38,7 @@ class JobSearchWidget extends StatelessWidget {
             ),
             child: Icon(
               Icons.filter_alt_rounded,
-              size: 25,
+              size: 22.r,
               color: Colors.black.withOpacity(0.4),
             ),
           )
